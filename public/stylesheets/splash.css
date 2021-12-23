@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    font-family: 'Agency FB', arial;
+    color: white;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.header {
+    font-size: 60px;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 5%;
+}
+
+#title {
+    width: 300px;
+    border: 8px solid #2596be;
+    padding: 10px;
+    margin: 20px;
+    height: 60px;
+}
+
+#title p {
+    position: relative;
+    top: -70px;
+}
+
+.play-button {
+    display: block;
+    height: 100px;
+    width: 300px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    background: #002672;
+    background: -webkit-linear-gradient(to right, #002672, #2263d5);
+    background: linear-gradient(to right, #002672, #2263d5);
+    padding: 20px 40px;
+    border: none;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.play-button a {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    font-family: 'Agency FB', arial;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.play-button a:hover {
+    color: white;
+}
+
+#bot-bar {
+    width: 95%;
+    text-align: left;
+    position: absolute;
+    bottom: 10px;
+}
+
+#stats {
+    float: left;
+    font-size: 30px;
+    line-height: 5px;
+    bottom: 0px;
+}
+
+#info {
+    float: right;
+    line-height: 10px;
+}
+
+#how-to-play {
+    text-align: center;
+}
+
+#instructions {
+    width: 100%;
+    text-align: center;
+    position: inherit;
+}
+
+#instructions {
+    column-count: 3;
+    column-gap: 30px;
+}
