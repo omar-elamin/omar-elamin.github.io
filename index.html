@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to your chalet at التجاريين, the premier North Coast compound. Your Mediterranean beach address awaits.">
+    <meta name="author" content="El Malah Group">
+    <meta property="og:title" content="التجاريين — Chalet Confirmation">
+    <meta property="og:description" content="Your summer starts here at Egypt's premier North Coast compound">
+    <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MzAiIHZpZXdCb3g9IjAgMCAxMjAwIDYzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjMwIiBmaWxsPSIjRjZFRkU3Ii8+CjxjaXJjbGUgY3g9IjYwMCIgY3k9IjMxNSIgcj0iMTAwIiBmaWxsPSIjN0ZEM0MzIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8L3N2Zz4K">
+    <meta property="og:type" content="website">
+    <title>التجاريين — Chalet Confirmation</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&family=Inter:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzdGRDNDMyIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSI4IiBmaWxsPSIjMEYzRDNFIi8+Cjwvc3ZnPgo=">
+
+    <style>
+        :root {
+            --sand: #F6EFE7;
+            --seafoam: #CFEAE2;
+            --turquoise: #7FD3C3;
+            --deep-teal: #0F3D3E;
+            --sun-peach: #FFD9C7;
+            --warm-gold: #C9AD7F;
+            --turquoise-hover: #6BC5B3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--sand) 0%, var(--seafoam) 100%);
+            color: var(--deep-teal);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 16px 0;
+            text-align: center;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .wordmark {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: 1px;
+            color: var(--deep-teal);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px 0 30px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .welcome-label {
+            font-family: 'Parisienne', cursive;
+            font-size: 20px;
+            color: var(--turquoise);
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .hero h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: clamp(32px, 7vw, 52px);
+            letter-spacing: 0.5px;
+            color: var(--deep-teal);
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .hero .subhead {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--deep-teal);
+            opacity: 0.75;
+            margin-bottom: 25px;
+        }
+
+        .qr-section {
+            text-align: center;
+            margin: 25px 0;
+            animation: fadeIn 0.8s ease-out 0.3s both;
+        }
+
+        .qr-placeholder {
+            display: inline-block;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(15, 61, 62, 0.1);
+        }
+
+        .qr-placeholder img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            filter: drop-shadow(0 2px 8px rgba(15, 61, 62, 0.05));
+        }
+
+        .qr-label {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--deep-teal);
+            opacity: 0.85;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .qr-id {
+            margin: 0;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--deep-teal);
+            opacity: 0.6;
+            letter-spacing: 0.5px;
+        }
+
+        .message {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 25px 0;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.8s ease-out 0.4s both;
+        }
+
+        .message p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .message p:last-child {
+            margin-bottom: 0;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 25px 0;
+            animation: fadeIn 0.8s ease-out 0.6s both;
+        }
+
+        .action-btn {
+            background: var(--turquoise);
+            color: var(--deep-teal);
+            border: none;
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            min-height: 56px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(127, 211, 195, 0.2);
+        }
+
+        .action-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            position: absolute;
+            left: 20px;
+        }
+
+        .action-btn:hover {
+            background: var(--turquoise-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(127, 211, 195, 0.3);
+        }
+
+        .action-btn:active {
+            transform: translateY(0);
+        }
+
+        .info-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin: 40px 0;
+            animation: fadeIn 0.8s ease-out 0.8s both;
+        }
+
+        .chip {
+            background: var(--sun-peach);
+            color: var(--deep-teal);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0.85;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0 20px;
+            margin-top: 40px;
+            animation: fadeIn 0.8s ease-out 1s both;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .developer-credit {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: var(--warm-gold);
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .developer-credit:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--sand);
+            color: var(--deep-teal);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 4px 16px rgba(15, 61, 62, 0.2);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: 15px 0 20px;
+            }
+
+            .qr-section {
+                margin: 20px 0;
+            }
+
+            .message {
+                padding: 20px;
+                margin: 20px 0;
+            }
+
+            .actions {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin: 20px 0;
+            }
+
+            footer {
+                padding: 25px 0 15px;
+                margin-top: 30px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="wordmark">التجاريين</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <div class="welcome-label">welcome</div>
+                <h1 id="welcome-heading">Welcome to Unit 162</h1>
+                <p class="subhead" id="visitor-subhead">You are visitor 1</p>
+            </section>
+
+            <section class="qr-section">
+                <div class="qr-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="QR Code Access Pass" width="200" height="200">
+                    <p class="qr-label">Access Pass</p>
+                    <p class="qr-id" id="access-pass-id">ID: AP-162-001</p>
+                </div>
+            </section>
+
+            <section class="message">
+                <p>Sun-drenched days and golden-hour nights await. Your beach address by the Mediterranean is ready — drop your bags, breathe, and enjoy the coast.</p>
+                <p>For beach club access and reservations, simply show this screen if asked.</p>
+            </section>
+
+            <section class="actions">
+                <a href="#" class="action-btn" id="directions-btn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                    </svg>
+                    Get Directions
+                </a>
+                <a href="https://preview--togareyeen-summer-invite.lovable.app/" class="action-btn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+                    </svg>
+                    Explore More
+                </a>
+                <a href="https://www.facebook.com/share/v/1Asziw4kmz/?mibextid=wwXIfr" class="action-btn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5v14l11-7z" fill="currentColor"/>
+                    </svg>
+                    Watch Our Story
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 التجاريين — A new wave of North Coast living.</p>
+            <p class="developer-credit">Developed by El Malah Group</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">Copied</div>
+
+    <script>
+        function getChaletNumber() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryChalet = urlParams.get('chalet');
+            
+            if (queryChalet) {
+                return sanitizeChaletNumber(queryChalet);
+            }
+            
+            const pathMatch = window.location.pathname.match(/\/chalet\/(\d+)/);
+            if (pathMatch) {
+                return sanitizeChaletNumber(pathMatch[1]);
+            }
+            
+            return null;
+        }
+
+        function sanitizeChaletNumber(input) {
+            const sanitized = input.toString().replace(/\D/g, '');
+            return sanitized.length > 0 && sanitized.length <= 4 ? sanitized : null;
+        }
+
+        function updateWelcomeMessage() {
+            const heading = document.getElementById('welcome-heading');
+            const subhead = document.getElementById('visitor-subhead');
+            const accessId = document.getElementById('access-pass-id');
+            
+            heading.textContent = 'Welcome to Unit 162';
+            
+            const visitorNumber = Math.floor(Math.random() * 9999) + 1;
+            subhead.textContent = `You are visitor ${visitorNumber}`;
+            
+            const paddedVisitor = visitorNumber.toString().padStart(3, '0');
+            accessId.textContent = `ID: AP-162-${paddedVisitor}`;
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+
+        function setupDirectionsButton() {
+            const directionsBtn = document.getElementById('directions-btn');
+            directionsBtn.href = 'https://goo.gl/maps/3XRYrtBQutfNGjV7A';
+            directionsBtn.setAttribute('aria-label', 'Get directions to North Coast Gate');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateWelcomeMessage();
+            setupDirectionsButton();
+        });
+    </script>
+</body>
+</html>
